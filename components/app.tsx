@@ -1031,15 +1031,15 @@ export function App() {
   }
 
   return (
-    <div className="flex h-screen bg-background text-foreground">
+    <div className="flex h-screen bg-white text-black">
       <motion.div
         className="w-64 border-r p-4 bg-card"
         initial={{ x: -100, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ duration: 0.5 }}
       >
-        <h2 className="text-2xl font-bold mb-4">Daily Tasks</h2>
-        <ScrollArea className="h-[calc(100vh-100px)]">
+        <h2 className="text-2xl font-bold mb-4 text-black">Daily Tasks</h2>
+        <ScrollArea className="h-[calc(100vh-100px)] text-black">
           {roadmap.map((week, weekIndex) => (
             <div key={weekIndex} className="mb-4">
               <h3 className="text-lg font-semibold mb-2">Week {week.week}</h3>
